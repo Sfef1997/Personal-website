@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohanad Sfef</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&family=Readex+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <input type="checkbox" class="burger-menu__checkbox" id="menu" />
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <nav class="navigation">
+          <ul class="navigation_list">
+            <li><a href="#bio" class="navigation_link nav__bio">Bio</a></li>
+            <li>
+              <a href="#skills" class="navigation_link nav__skills">Skills</a>
+            </li>
+            <li>
+              <a href="#media" class="navigation_link nav__media">Media</a>
+            </li>
+            <li>
+              <a href="#my__projects" class="navigation_link nav__my__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation_link nav__clients"
+                >My Clints</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact__info"
+                class="navigation_link nav__contact__info"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="toggle">
+          <h3 class="toggle_title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle_checkbox"
+            id="toggle"
+            class="toggle_checkbox"
+          />
+          <label for="toggle" class="toggle_lable"></label>
+        </div>
+      </header>
+      <!-- Section Bio -->
+      <section id="bio" class="bio section">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There , I´ m Junior Frontend Developer
+          </h1>
+          <p class="bio__adjective">
+            My Name is <span class="bio__name">Mohanad Sfef</span>, frontend
+            Developer i learned From
+            <a
+              href="https://almdrasa.com/courses"
+              class="bio__almdrasa"
+              target="_blank"
+              >Almdrasa.com</a
+            >
+            ,<a
+              href="https://www.linkedin.com/in/mohanad-sfef-33215322a/"
+              class="bio__linkdin"
+              target="_blank"
+              >Linkedin</a
+            >
+          </p>
+
+          <a href="#contact__info" class="bio__links say-hi-link">Say Hi</a>
+          <a
+            href="./Lebenslauf (1).pdf"
+            class="bio__links find-out-link"
+            target="_blank"
+            >Download Cv <span class="bio__arrow">↓</span></a
+          >
+        </div>
+        <div class="bio__pic-content">
+          <img src="./images/1.JPG" alt="image of author" class="bio__pic" />
+        </div>
+      </section>
+      <section class="skills section section--with-bg" id="skills">
+        <h2 class="h2-heading">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">Html</h2>
+            <span class="skills_years">3 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Css</h2>
+            <span class="skills_years"> 3 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">JavaScript</h2>
+            <span class="skills_years"> 2 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React</h2>
+            <span class="skills_years">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Jest</h2>
+            <span class="skills_years">1 year</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Redux</h2>
+            <span class="skills_years">1 year</span>
+          </li>
+        </ul>
+      </section>
+      <!-- End Section Bio -->
+
+      <!-- Start Media -->
+      <section class="media" id="media">
+        <video class="media__video" poster="images/thumbnail.jpg" controls>
+          <source src="./video/Chess-Game.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <!-- End Media -->
+      <!-- start my Projects -->
+      <section class="section section--with-bg my__projects" id="my__projects">
+        <h2 class="h2-heading">
+          My Featuerd <br />
+          Projects
+        </h2>
+        <div class="featured__pic">
+          <img
+            class="projects__img"
+            src="./images/project-1.jpg"
+            alt="Quran Tab image"
+          />
+        </div>
+        <div class="featured__info">
+          <h3 class="h3-heading">Quran Tab <br />Extaintion</h3>
+          <p class="info__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
+            quos doloremque? Accusantium facere error doloribus, sed iste,
+            tenetur a ab dolor dicta vitae cumque voluptatum sit! Enim hic
+            reprehenderit fuga?
+          </p>
+          <a href="#" class="projects__link"> Chrome Link </a>
+          <a href="#" class="projects__link"> Edge Link </a>
+        </div>
+
+        <div class="featured__info">
+          <h3 class="h3-heading">Quran Station <br />Extaintion</h3>
+          <p class="info__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
+            quos doloremque? Accusantium facere error doloribus, sed iste,
+            tenetur a ab dolor dicta vitae cumque voluptatum sit! Enim hic
+            reprehenderit fuga?
+          </p>
+          <a href="#" class="projects__link"> Chrome Link </a>
+          <a href="#" class="projects__link"> Edge Link </a>
+        </div>
+        <div class="featured__pic">
+          <img
+            class="projects__img"
+            src="./images/project-2.jpg"
+            alt="Quran Station image"
+          />
+        </div>
+      </section>
+      <!-- End my Projects -->
+      <!-- Start Clinet -->
+      <section class="clients section--with-bg" id="clients">
+        <h2 class="h2-heading">What My Clients <br />Says</h2>
+
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              quaerat voluptate, eveniet repudiandae exercitationem unde iure
+              tempore natus debitis cupiditate ab non doloribus facere, iusto
+              repellendus quis corporis ex sunt?
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              blanditiis sapiente? Quam nisi asperiores animi! Ducimus hic
+              architecto enim repudiandae laboriosam, impedit nulla eveniet
+              dicta? Id soluta fuga dolorum maiores!
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              consequatur optio deleniti hic libero ipsum ut earum facilis
+              accusamus neque, modi eligendi saepe enim quia, commodi assumenda
+              reiciendis! Obcaecati, accusantium!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Clinet -->
+      <!-- Start Contact US -->
+      <section class="contact__us section">
+        <div class="contact__info" id="contact__info">
+          <p class="contact__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+            porro! Repudiandae veniam voluptas
+          </p>
+          <a href="mailto:example@gmail.com" class="contact__email"
+            >example@gmail.com</a
+          >
+          <div class="contact__links">
+            <a href="#" class="contact__social">
+              <img src="./images/brand/facebook.svg" alt=" facebook icon" /></a
+            ><a href="#" class="contact__social"
+              ><img src="./images/brand/github.svg" alt="github icon" /></a
+            ><a href="#" class="contact__social"
+              ><img
+                src="./images/brand/instagram.svg"
+                alt="instagram icon" /></a
+            ><a href="#" class="contact__social"
+              ><img src="./images/brand/twitter.svg" alt="twitter icon" /></a
+            ><a href="#" class="contact__social"
+              ><img src="./images/brand/LinkedIn.svg" alt="LinkedIn icon" /></a
+            ><a href="#" class="contact__social"
+              ><img src="/images/brand/youtube.svg" alt="youtube icon"
+            /></a>
+          </div>
+        </div>
+        <div class="contact__formcontent">
+          <h2 class="h2-heading">Let' s work <br />Together</h2>
+          <form action="resultes.html">
+            <div class="contact__inputs">
+              <input
+                class="contact__input"
+                type="text"
+                placeholder="Full Name"
+                required
+                name="fullName"
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                placeholder="Phone NU"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                name="telephone"
+                required
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="description"
+              id="description"
+              rows="1"
+              placeholder="Your Message"
+            ></textarea>
+            <input
+              class="contact__input contact__button"
+              type="submit"
+              value="Send Message"
+            />
+          </form>
+        </div>
+      </section>
+      <!-- End Contact US -->
+      <footer>&#169; copy right 2023 by Mohanad Sfef</footer>
+    </div>
+  </body>
+</html>

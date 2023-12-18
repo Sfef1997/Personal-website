@@ -1,0 +1,107 @@
+.header {
+  padding: 3rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background);
+  z-index: 2;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  top: 0;
+  z-index: -1;
+  background-color: var(--color-background);
+}
+.navigation {
+  transition: 0.3s;
+}
+.navigation_list {
+  display: flex;
+  gap: 2rem;
+}
+.navigation_link:visited,
+.navigation_link:link {
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-timing);
+}
+
+.container:has(#my__projects:target) .nav__my__projects,
+.container:has(#contact__info:target) .nav__contact__info,
+.container:has(#clients:target) .nav__clients,
+.container:has(#media:target) .nav__media,
+.container:has(#skills:target) .nav__skills,
+.container:has(#bio:target) .nav__bio {
+  color: var(--color-dark-green);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+.navigation_link:hover,
+.navigation_link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+
+.burger-menu__checkbox {
+  display: none;
+}
+/* Toggle */
+
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+.toggle_title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+}
+.toggle_checkbox {
+  display: none;
+}
+.toggle_lable {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  width: 4.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  transition: 0.3s;
+}
+
+.toggle_lable::after {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  display: block;
+  transition: 0.3s;
+}
+.toggle_checkbox:checked + .toggle_lable {
+  background-color: var(--color-white);
+}
+.toggle_checkbox:checked + .toggle_lable::after {
+  transform: translateX(2.1rem);
+  background-color: var(--color-green);
+}
+
+html:has(.toggle_checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-green);
+  --color-link-bg: var(--color-green);
+  --color-input-border: var(--color-white);
+  --color-grey: var(--color-black);
+}
+
+/* End Toggle */
